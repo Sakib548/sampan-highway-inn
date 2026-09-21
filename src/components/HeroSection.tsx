@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 interface DistanceItem {
@@ -19,26 +19,33 @@ const corridorDistances: DistanceItem[] = [
 ];
 
 export default function HeroSection() {
-  const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (isPlaying) {
-      videoRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
 
-  const toggleMute = () => {
-    if (!videoRef.current) return;
-    videoRef.current.muted = !isMuted;
-    setIsMuted(!isMuted);
-  };
+    video.defaultMuted = true;
+    video.muted = true;
+
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Autoplay may be delayed until first user interaction on some low-power devices
+      });
+    }
+
+    const handleEnded = () => {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    };
+
+    video.addEventListener("ended", handleEnded);
+    return () => {
+      video.removeEventListener("ended", handleEnded);
+    };
+  }, []);
 
   return (
     <section className="relative pt-32 sm:pt-40 pb-16 sm:pb-24 border-b border-white/10 overflow-hidden">
@@ -49,9 +56,16 @@ export default function HeroSection() {
           src="/videos/sampan-highway.mp4"
           autoPlay
           loop
-          muted={isMuted}
+          muted
           playsInline
-          className="w-full h-full object-cover object-center scale-105"
+          preload="auto"
+          onEnded={() => {
+            if (videoRef.current) {
+              videoRef.current.currentTime = 0;
+              videoRef.current.play().catch(() => {});
+            }
+          }}
+          className="w-full h-full object-cover object-center scale-105 pointer-events-none"
         />
         {/* Balanced cinematic scrims - lighter overlay allowing the drone video to shine through */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#090d16]/75 via-[#090d16]/40 to-black/15" />
