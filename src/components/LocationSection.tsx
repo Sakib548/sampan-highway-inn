@@ -119,8 +119,8 @@ export default function LocationSection() {
                     type="button"
                     onClick={() => setActiveTab("map")}
                     className={`px-3 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${activeTab === "map"
-                        ? "bg-[#0072bc] text-white shadow-xs"
-                        : "text-stone-400 hover:text-white"
+                      ? "bg-[#0072bc] text-white shadow-xs"
+                      : "text-stone-400 hover:text-white"
                       }`}
                   >
                     Google Map
@@ -129,8 +129,8 @@ export default function LocationSection() {
                     type="button"
                     onClick={() => setActiveTab("corridor")}
                     className={`px-3 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${activeTab === "corridor"
-                        ? "bg-[#0072bc] text-white shadow-xs"
-                        : "text-stone-400 hover:text-white"
+                      ? "bg-[#0072bc] text-white shadow-xs"
+                      : "text-stone-400 hover:text-white"
                       }`}
                   >
                     Route Schematic
