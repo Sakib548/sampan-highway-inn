@@ -69,7 +69,7 @@ export default function StaySection() {
           </div>
           <div className="lg:col-span-6">
             <p className="editorial-spacing text-sm sm:text-base text-stone-300 font-light">
-              Two ways to stay the night, thirty-five seconds apart: pick the highway suite or the quieter motel next door.
+              Two ways to stay the night, 35 seconds apart: pick the highway suite or the quieter motel next door.
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@ const retailStops: RetailStop[] = [
     title: "Mini Sampan Super Shop",
     image: "/images/nearby/mini-sampan.jpg",
     description:
-      "A neighbourhood-style kiosk built for the quick stop: in and out with what you need before you're back on the highway.",
+      "A neighbourhood style kiosk built for the quick stop: in and out with what you need before you're back on the highway.",
     features: ["Instant refreshments", "Travel accessories", "Express checkout"],
   },
 ];

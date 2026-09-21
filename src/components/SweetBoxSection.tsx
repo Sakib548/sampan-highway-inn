@@ -26,7 +26,7 @@ const sweetItems: {
     {
       title: "Ghee delicacies",
       tag: "Clarified Ghee",
-      description: "Rich, slow-cooked treats finished in clarified ghee for deep aroma and taste.",
+      description: "Rich, slow cooked treats finished in clarified ghee for deep aroma and taste.",
       image: "/images/nearby/sweet3.jpg",
       accentColor: "bg-[#f59e0b]",
       hoverClass: "hover:border-[#f59e0b]/60 hover:shadow-amber-100/50",
