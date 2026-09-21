@@ -34,11 +34,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${isScrolled
           ? "bg-[#090d16]/95 backdrop-blur-md border-b border-white/10 shadow-lg py-3"
           : "bg-gradient-to-b from-black/85 via-black/45 to-transparent py-5 border-b border-transparent"
-      }`}
+        }`}
     >
       {/* Brand Tri-Color hairline strip across top */}
       <div className="absolute top-0 left-0 right-0 h-[2px] brand-tricolor-gradient" />
@@ -67,7 +66,7 @@ export default function Navbar() {
                 <span className="w-1.5 h-1.5 rounded-full bg-[#fab516]" title="Sampan Gold" />
                 <span className="w-1.5 h-1.5 rounded-full bg-[#c8102e]" title="Sampan Red" />
               </div>
-              <span className="text-stone-100 font-serif text-sm md:text-base font-normal tracking-wide">
+              <span className="text-stone-100  text-sm md:text-base font-normal tracking-wide">
                 Sampan Highway Inn
               </span>
             </div>

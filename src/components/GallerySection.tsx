@@ -250,29 +250,29 @@ export default function GallerySection() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Editorial Section Header */}
         <div
-          className={`flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 sm:mb-16 transition-all duration-1000 ease-out ${
+          className={`flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-10 transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
           <div className="max-w-2xl">
             {/* Top Kicker with brand colors */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-2xs mb-4">
-              <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#0072bc]" />
-                <span className="w-2 h-2 rounded-full bg-[#fab516]" />
-                <span className="w-2 h-2 rounded-full bg-[#c8102e]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-200 shadow-2xs mb-2.5">
+              <div className="flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0072bc]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#fab516]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#c8102e]" />
               </div>
-              <span className="text-[11px] font-mono tracking-tag uppercase text-stone-700 font-semibold">
+              <span className="text-[10px] font-mono tracking-tag uppercase text-stone-700 font-semibold">
                 Photo Gallery & Spaces
               </span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-stone-950 leading-tight">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-stone-950 leading-tight whitespace-nowrap">
               Estate, Suites & Dining
             </h2>
 
-            <p className="editorial-spacing mt-3 text-sm sm:text-base text-stone-600 font-light max-w-xl">
-              A photographic tour through our highway oasis, from the illuminated expressway frontage to the private acoustic rest suites.
+            <p className="editorial-spacing mt-2 text-xs sm:text-sm text-stone-600 font-light max-w-xl">
+              A photographic tour through our highway oasis, from the expressway frontage to the rest suites.
             </p>
           </div>
 
