@@ -1,19 +1,27 @@
-import HeroCarousel from "@/components/HeroCarousel";
-import AboutSection from "@/components/AboutSection";
-import AmenitiesSection from "@/components/AmenitiesSection";
-import LocationSection from "@/components/LocationSection";
+import HeroSection from "@/components/HeroSection";
+import RestaurantSection from "@/components/RestaurantSection";
+import StaySection from "@/components/StaySection";
+import SweetBoxSection from "@/components/SweetBoxSection";
+import RetailSection from "@/components/RetailSection";
+import FuelSection from "@/components/FuelSection";
 import GallerySection from "@/components/GallerySection";
-import VideoSection from "@/components/VideoSection";
+import LocationSection from "@/components/LocationSection";
+import PlanStopSection from "@/components/PlanStopSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="flex-1">
-      <HeroCarousel />
-      <AboutSection />
-      <AmenitiesSection />
-      <LocationSection />
+      <HeroSection />
+      <RestaurantSection />
+      <StaySection />
+      <SweetBoxSection />
+      <RetailSection />
+      <FuelSection />
       <GallerySection />
-      <VideoSection />
+      <LocationSection />
+      <PlanStopSection />
+      <Footer />
     </main>
   );
 }

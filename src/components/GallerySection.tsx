@@ -159,22 +159,13 @@ export default function GallerySection() {
     <section
       id="gallery"
       ref={sectionRef}
-      className="relative py-24 sm:py-32 bg-[#faf9f6] text-slate-900 border-t border-slate-200/70 overflow-hidden"
+      className="relative py-20 sm:py-28 bg-[#faf9f6] text-stone-900 border-t border-b border-stone-200 overflow-hidden"
     >
-      {/* Subtle Architectural Atmosphere Lighting */}
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-gradient-to-b from-[#0072bc]/5 to-transparent blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-0 right-10 w-[500px] h-[400px] bg-gradient-to-tl from-[#f59e0b]/5 to-transparent blur-[140px] pointer-events-none" />
+      {/* Subtle Atmosphere Lighting */}
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-gradient-to-b from-[#0072bc]/5 to-transparent blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 right-10 w-[450px] h-[350px] bg-gradient-to-tl from-[#fab516]/5 to-transparent blur-[140px] pointer-events-none" />
 
-      {/* Subtle Dot Grid Background */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.025]"
-        style={{
-          backgroundImage: `radial-gradient(circle at 1.5px 1.5px, #0072bc 1px, transparent 0)`,
-          backgroundSize: "28px 28px",
-        }}
-      />
-
-      <div className="relative max-w-6xl mx-auto px-8 sm:px-14 md:px-18 lg:px-20 xl:px-24">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Editorial Section Header */}
         <div
           className={`flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 sm:mb-16 transition-all duration-1000 ease-out ${
@@ -182,28 +173,29 @@ export default function GallerySection() {
           }`}
         >
           <div className="max-w-2xl">
-            {/* Top Kicker */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0072bc] animate-pulse" />
-              <span className="text-[11px] font-bold tracking-widest uppercase text-slate-700">
-                Visual Portfolio & Atmosphere
+            {/* Top Kicker with brand colors */}
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-2xs mb-4">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#0072bc]" />
+                <span className="w-2 h-2 rounded-full bg-[#fab516]" />
+                <span className="w-2 h-2 rounded-full bg-[#c8102e]" />
+              </div>
+              <span className="text-[11px] font-mono tracking-tag uppercase text-stone-700 font-semibold">
+                Photo Gallery & Spaces
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight leading-[1.16]">
-              Architectural Scale &{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0072bc] via-[#0284c7] to-[#f59e0b]">
-                Inner Spaces
-              </span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-stone-950 leading-tight">
+              Estate, Suites & Dining
             </h2>
 
-            <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-              A curated photographic journey through our highway oasis — from the sweeping night-lit grounds to the tranquil acoustic rest suites.
+            <p className="editorial-spacing mt-3 text-sm sm:text-base text-stone-600 font-light max-w-xl">
+              A photographic tour through our highway oasis — from the illuminated expressway frontage to the private acoustic rest suites.
             </p>
           </div>
 
-          {/* Minimalist Floating Tab Switcher */}
-          <div className="flex flex-wrap items-center gap-2 p-1.5 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200/90 shadow-xs shrink-0">
+          {/* Floating Tab Switcher with Brand Blue Active */}
+          <div className="flex flex-wrap items-center gap-1.5 p-1.5 bg-white rounded-xl border border-stone-200 shadow-2xs shrink-0">
             {categories.map((cat) => {
               const isActive = activeTab === cat.id;
               return (
@@ -213,16 +205,16 @@ export default function GallerySection() {
                     setActiveTab(cat.id);
                     setLightboxIndex(null);
                   }}
-                  className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer ${
+                  className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer ${
                     isActive
-                      ? "bg-slate-900 text-white shadow-md shadow-slate-900/20 scale-[1.02]"
-                      : "text-slate-600 hover:text-slate-950 hover:bg-slate-100/80"
+                      ? "bg-[#0072bc] text-white shadow-sm shadow-[#0072bc]/25"
+                      : "text-stone-600 hover:text-stone-950 hover:bg-stone-100"
                   }`}
                 >
                   <span>{cat.label}</span>
                   <span
-                    className={`text-[10px] px-1.5 py-0.5 rounded-full font-mono transition-colors ${
-                      isActive ? "bg-white/20 text-white" : "bg-slate-100 text-slate-400"
+                    className={`text-[10px] px-1.5 py-0.5 rounded font-mono ${
+                      isActive ? "bg-white/20 text-white" : "bg-stone-100 text-stone-500"
                     }`}
                   >
                     {cat.count}

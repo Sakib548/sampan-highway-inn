@@ -1,36 +1,36 @@
 import type { Metadata } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
 
-const outfit = Outfit({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-serif",
   display: "swap",
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Sampan Highway Inn | Highway Restaurant, Stay & Traveler Stop",
+  title: "Sampan Highway Inn | KM 103 Dhaka-Khulna Highway Stopover",
   description:
-    "Sampan Highway Inn offers comfortable lodging, 24/7 delicious dining, refreshments, and premier highway amenities for travelers.",
+    "Sampan Highway Inn offers premier highway hospitality: dining hall, party centre, VVIP rest suites, traditional sweet box, super shop, and 24/7 fuel & LPG at KM 103.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${plusJakarta.variable} antialiased`}
+      className={`${playfair.variable} ${plusJakarta.variable} antialiased`}
     >
       <body
         suppressHydrationWarning
-        className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-[#0072bc]/15 selection:text-[#0072bc]"
+        className="min-h-screen flex flex-col bg-[#0c0f17] text-slate-100 selection:bg-[#0072bc]/30 selection:text-white"
       >
         <SmoothScroll>
           <Navbar />

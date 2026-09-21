@@ -1,25 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --background: #090d16;
+  --foreground: #f1f5f9;
+  --brand-blue: #0072bc;
+  --brand-blue-light: #0ea5e9;
+  --brand-gold: #fab516;
+  --brand-gold-amber: #f59e0b;
+  --brand-red: #c8102e;
+  --brand-red-light: #ef4444;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-heading: var(--font-outfit), sans-serif;
-  --font-sans: var(--font-plus-jakarta), sans-serif;
+  --color-brand-blue: #0072bc;
+  --color-brand-blue-light: #0ea5e9;
+  --color-brand-gold: #fab516;
+  --color-brand-gold-amber: #f59e0b;
+  --color-brand-red: #c8102e;
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans: var(--font-sans), sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-plus-jakarta), sans-serif;
+  font-family: var(--font-sans), sans-serif;
+  letter-spacing: 0.012em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-outfit), sans-serif;
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* High-end editorial spacing */
+.editorial-spacing {
+  letter-spacing: 0.018em;
+  word-spacing: 0.05em;
+  line-height: 1.75;
+}
+
+.tracking-tag {
+  letter-spacing: 0.12em;
+}
+
+/* Brand tri-color gradient bar */
+.brand-tricolor-gradient {
+  background: linear-gradient(90deg, #0072bc 0%, #fab516 50%, #c8102e 100%);
+}
+
+.editorial-card {
+  background-color: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  background-color: rgba(255, 255, 255, 0.045);
+  border-color: rgba(0, 114, 188, 0.35);
 }
 
 /* Lenis Recommended CSS - Essential to prevent scroll lock */
