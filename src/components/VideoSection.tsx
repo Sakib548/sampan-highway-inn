@@ -134,7 +134,7 @@ export default function VideoSection() {
           <div className="relative aspect-video w-full flex items-center justify-center bg-black">
             <video
               ref={videoRef}
-              src="/videos/sampan-highway.MP4"
+              src="/videos/sampan-highway.mp4"
               preload="none"
               playsInline
               onTimeUpdate={handleTimeUpdate}
