@@ -24,7 +24,7 @@ const retailStops: RetailStop[] = [
     title: "Sampan Mart",
     image: "/images/nearby/sampan-Mart.jpg",
     description:
-      "The flagship super shop for the highway — groceries, travel essentials and fresh snacks, stocked around the clock.",
+      "The flagship super shop for the highway with groceries, travel essentials and fresh snacks, stocked around the clock.",
     features: ["Groceries & daily essentials", "Travel essentials", "Fresh snacks"],
   },
   {
@@ -36,7 +36,7 @@ const retailStops: RetailStop[] = [
     title: "Mini Sampan Super Shop",
     image: "/images/nearby/mini-sampan.jpg",
     description:
-      "A neighbourhood-style kiosk built for the quick stop — in and out with what you need before you're back on the highway.",
+      "A neighbourhood-style kiosk built for the quick stop: in and out with what you need before you're back on the highway.",
     features: ["Instant refreshments", "Travel accessories", "Express checkout"],
   },
 ];
@@ -54,7 +54,7 @@ export default function RetailSection() {
           </div>
           <div className="lg:col-span-6">
             <p className="editorial-spacing text-sm sm:text-base text-stone-300 font-light">
-              Two stops for the road ahead — one for a proper shop, one for a quick grab.
+              Two stops for the road ahead: one for a proper shop, one for a quick grab.
             </p>
           </div>
         </div>

@@ -68,7 +68,7 @@ export default function SweetBoxSection() {
           </div>
           <div className="lg:col-span-6">
             <p className="editorial-spacing text-sm sm:text-base text-stone-700 font-light">
-              Traditional Bengali mishti, made daily with pure chhana and ghee — the same sweets that travel home in a gift box long after the visit is over.
+              Traditional Bengali mishti, made daily with pure chhana and ghee, the same sweets that travel home in a gift box long after the visit is over.
             </p>
           </div>
         </div>

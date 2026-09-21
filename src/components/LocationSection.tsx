@@ -53,7 +53,7 @@ export default function LocationSection() {
               </div>
 
               <p className="editorial-spacing text-sm sm:text-base text-stone-300 font-light mb-8">
-                Direct highway access on the main Dhaka–Khulna corridor — no link roads, no detours. Turn in, and you&apos;re back on the highway again within seconds.
+                Direct highway access on the main Dhaka-Khulna corridor with no link roads and no detours. Turn in, and you&apos;re back on the highway again within seconds.
               </p>
 
               {/* Highway Corridor Transit Milestones */}
@@ -167,7 +167,7 @@ export default function LocationSection() {
                       Sampan Highway Inn
                     </h4>
                     <p className="text-[11px] text-stone-300 font-mono mb-3 leading-tight">
-                      Dhaka–Khulna Corridor, Kashiani
+                      Dhaka-Khulna Corridor, Kashiani
                     </p>
                     <a
                       href={googleMapsUrl}
@@ -259,7 +259,7 @@ export default function LocationSection() {
                   </div>
 
                   <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-stone-300 font-mono">
-                    <span>Corridor: Dhaka–Khulna Expressway</span>
+                    <span>Corridor: Dhaka-Khulna Expressway</span>
                     <span className="text-[#38bdf8]">24/7 Gate Access</span>
                   </div>
                 </div>

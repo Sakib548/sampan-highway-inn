@@ -272,7 +272,7 @@ export default function GallerySection() {
             </h2>
 
             <p className="editorial-spacing mt-3 text-sm sm:text-base text-stone-600 font-light max-w-xl">
-              A photographic tour through our highway oasis — from the illuminated expressway frontage to the private acoustic rest suites.
+              A photographic tour through our highway oasis, from the illuminated expressway frontage to the private acoustic rest suites.
             </p>
           </div>
 

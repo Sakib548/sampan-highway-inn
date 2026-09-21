@@ -304,7 +304,7 @@ export default function VideoSection() {
           </div>
           <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 backdrop-blur-xs">
             <span className="block text-xs uppercase tracking-wider text-slate-400">Corridor</span>
-            <span className="text-sm sm:text-base font-bold text-white mt-0.5 block">Dhaka–Khulna Highway</span>
+            <span className="text-sm sm:text-base font-bold text-white mt-0.5 block">Dhaka-Khulna Highway</span>
           </div>
           <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 backdrop-blur-xs">
             <span className="block text-xs uppercase tracking-wider text-slate-400">Operation</span>

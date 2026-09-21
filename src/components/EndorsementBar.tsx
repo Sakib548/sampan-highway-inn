@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
 }
 
 const SISTER_CONCERNS = [
-  { name: "Express Highway Inn", link: "#", logo: "/logo/expresshighwayinn.png" },
+  { name: "Sampan Development Limited ", link: "https://sampandevelopmentltd.com/", logo: "/logo/development.png" },
   { name: "LSHS", link: "https://cips.lshs.co.uk/", logo: "/logo/lshs.png" },
   { name: "Sampan Group", link: "https://sampangroup.com.bd", logo: "/logo/sampanretail.png" },
 ];

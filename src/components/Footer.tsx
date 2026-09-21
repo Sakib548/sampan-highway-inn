@@ -24,14 +24,14 @@ export default function Footer() {
               Dhaka-Khulna Highway,Kashiani.
             </p>
             <p className="editorial-spacing text-xs text-stone-400 font-light max-w-sm">
-              Restaurant, party centre, sweets, retail, fuel and rest — one stop, part of Sampan Group.
+              Restaurant, party centre, sweets, retail, fuel and rest in one stop, part of Sampan Group.
             </p>
           </div>
 
           {/* On this page */}
           <div className="lg:col-span-3">
             <h4 className="text-[11px] font-mono tracking-tag text-stone-400 uppercase mb-4">
-              On this page
+              Our Services
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
@@ -75,20 +75,48 @@ export default function Footer() {
           {/* Sister properties */}
           <div className="lg:col-span-3">
             <h4 className="text-[11px] font-mono tracking-tag text-stone-400 uppercase mb-4">
-              Sister properties
+              Our Concerns
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <span className="text-stone-300">Express Highway Inn</span>
+                <a
+                  href="https://www.sampangroup.com.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-300 hover:text-[#fab516] transition-colors"
+                >
+                  Sampan Group
+                </a>
               </li>
               <li>
-                <span className="text-stone-300">Sampan White House</span>
+                <a
+                  href="https://sampandevelopmentltd.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-300 hover:text-[#fab516] transition-colors"
+                >
+                  Sampan Development Ltd.
+                </a>
               </li>
               <li>
-                <span className="text-stone-300">Sampan Agro & Golf Resort</span>
+                <a
+                  href="https://cips.lshs.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-300 hover:text-[#fab516] transition-colors"
+                >
+                  London School of Higher Studies
+                </a>
               </li>
               <li>
-                <span className="text-stone-300">Sampan Group</span>
+                <a
+                  href="https://expresshighway.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-300 hover:text-[#fab516] transition-colors"
+                >
+                  Express Highway Inn
+                </a>
               </li>
             </ul>
           </div>
