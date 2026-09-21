@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface FuelStation {
   tag: string;
   tagColor: string;
@@ -7,6 +9,7 @@ interface FuelStation {
   dotColor: string;
   hoverBorder: string;
   title: string;
+  image: string;
   description: string;
   features: string[];
 }
@@ -19,6 +22,7 @@ const fuelStations: FuelStation[] = [
     dotColor: "bg-[#c8102e]",
     hoverBorder: "hover:border-[#c8102e]/50",
     title: "Sampan Filling Station",
+    image: "/images/nearby/filling-station.jpg",
     description:
       "A high-volume refuel stop right on the corridor, with Octane 95, diesel and Mobil lubricants on hand.",
     features: [
@@ -34,6 +38,7 @@ const fuelStations: FuelStation[] = [
     dotColor: "bg-[#0072bc]",
     hoverBorder: "hover:border-[#0072bc]/50",
     title: "Sampan LPG Filling Station",
+    image: "/images/nearby/lpg.jpeg",
     description:
       "High-pressure auto LPG dispensing and cylinder refilling, for vehicles running on gas.",
     features: [
@@ -62,35 +67,54 @@ export default function FuelSection() {
           </div>
         </div>
 
-        {/* 2 Fuel Cards */}
+        {/* 2 Fuel Cards with Real Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {fuelStations.map((station) => (
             <div
               key={station.title}
-              className={`p-6 sm:p-8 rounded border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition-all flex flex-col justify-between ${station.hoverBorder}`}
+              className={`group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between overflow-hidden ${station.hoverBorder}`}
             >
               <div>
-                <span className={`inline-block text-[11px] font-mono tracking-tag uppercase px-2.5 py-1 rounded border mb-4 ${station.tagColor} ${station.tagBorder}`}>
-                  {station.tag}
-                </span>
-                <h3 className="font-serif text-xl sm:text-2xl font-normal text-stone-100 mb-3">
-                  {station.title}
-                </h3>
-                <p className="editorial-spacing text-xs sm:text-sm text-stone-400 font-light mb-8">
-                  {station.description}
-                </p>
+                {/* Fuel Station Image Container */}
+                <div className="relative w-full h-56 sm:h-64 bg-stone-900 overflow-hidden">
+                  <Image
+                    src={station.image}
+                    alt={station.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
 
-                {/* Features list with brand dot */}
-                <div className="divide-y divide-white/10 border-t border-b border-white/10">
-                  {station.features.map((feature) => (
-                    <div
-                      key={feature}
-                      className="py-3 text-xs sm:text-sm text-stone-300 font-light tracking-wide flex items-center gap-2.5"
-                    >
-                      <span className={`w-1.5 h-1.5 rounded-full ${station.dotColor}`} />
-                      <span>{feature}</span>
-                    </div>
-                  ))}
+                  {/* Top Tag Badge */}
+                  <div className="absolute top-4 left-4">
+                    <span className={`inline-block text-[11px] font-mono tracking-tag uppercase px-2.5 py-1 rounded backdrop-blur-md border ${station.tagColor} ${station.tagBorder}`}>
+                      {station.tag}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content Details */}
+                <div className="p-6 sm:p-8">
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-stone-100 mb-3 group-hover:text-white transition-colors">
+                    {station.title}
+                  </h3>
+                  <p className="editorial-spacing text-xs sm:text-sm text-stone-400 font-light mb-8">
+                    {station.description}
+                  </p>
+
+                  {/* Features list with brand dot */}
+                  <div className="divide-y divide-white/10 border-t border-b border-white/10">
+                    {station.features.map((feature) => (
+                      <div
+                        key={feature}
+                        className="py-3 text-xs sm:text-sm text-stone-300 font-light tracking-wide flex items-center gap-2.5"
+                      >
+                        <span className={`w-1.5 h-1.5 rounded-full ${station.dotColor}`} />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

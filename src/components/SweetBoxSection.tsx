@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface SweetItem {
   title: string;
   description: string;
@@ -43,7 +45,7 @@ export default function SweetBoxSection() {
         </div>
 
         {/* Split Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-12">
           <div className="lg:col-span-6">
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-stone-900 leading-tight">
               Sampan Sweet Box
@@ -53,6 +55,31 @@ export default function SweetBoxSection() {
             <p className="editorial-spacing text-sm sm:text-base text-stone-700 font-light">
               Traditional Bengali mishti, made daily with pure chhana and ghee — the same sweets that travel home in a gift box long after the visit is over.
             </p>
+          </div>
+        </div>
+
+        {/* Sweet Shop Photo Banner */}
+        <div className="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden mb-12 border border-stone-200 shadow-sm group">
+          <Image
+            src="/images/facilities/sweet-shop.jpg"
+            alt="Sampan Sweet Box Artisanal Bengali Confectionery"
+            fill
+            sizes="(max-width: 1280px) 100vw, 1152px"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-103"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+          <div className="absolute bottom-5 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-2 text-white">
+            <div>
+              <span className="inline-block text-[11px] font-mono tracking-wide text-amber-300 uppercase mb-1">
+                Artisanal Confectionery Counter
+              </span>
+              <h3 className="font-serif text-lg sm:text-xl font-normal text-white">
+                Fresh Chhana &amp; Clarified Ghee Mishti
+              </h3>
+            </div>
+            <span className="text-xs font-mono text-stone-300">
+              Travel Gift Boxes Ready
+            </span>
           </div>
         </div>
 
