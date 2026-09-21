@@ -21,7 +21,7 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-xs text-brand-gold font-mono mb-3">
-              Dhaka-Khulna Highway, Kashiani.
+              Dhaka-Khulna Highway,Kashiani.
             </p>
             <p className="editorial-spacing text-xs text-stone-400 font-light max-w-sm">
               Restaurant, party centre, sweets, retail, fuel and rest — one stop, part of Sampan Group.
