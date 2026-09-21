@@ -17,9 +17,18 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Sampan Highway Inn | KM 103 Dhaka-Khulna Highway Stopover",
+  title: "Sampan Highway Inn",
   description:
     "Sampan Highway Inn offers premier highway hospitality: dining hall, party centre, VVIP rest suites, traditional sweet box, super shop, and 24/7 fuel & LPG at KM 103.",
+  icons: {
+    icon: [
+      { url: "/logos/sampanhighwayinn.png" },
+      { url: "/logos/sampanhighwayinn.png", sizes: "32x32" },
+      { url: "/logos/sampanhighwayinn.png", sizes: "16x16" },
+    ],
+    shortcut: "/logos/sampanhighwayinn.png",
+    apple: "/logos/sampanhighwayinn.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

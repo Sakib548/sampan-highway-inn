@@ -35,7 +35,7 @@ export default function LocationSection() {
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-stone-100 leading-tight mb-4">
-                Find us at KM 103
+                Find us at  Kashiani
               </h2>
 
               {/* Coordinates Badge with brand color & copy button */}
@@ -60,17 +60,17 @@ export default function LocationSection() {
               <div className="p-4 rounded-xl border border-white/10 bg-white/[0.02] mb-8 space-y-2.5 text-xs font-mono">
                 <div className="flex items-center justify-between text-stone-300">
                   <span className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0072bc]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
                     <span>Padma Bridge Toll Plaza</span>
                   </span>
-                  <span className="text-[#fab516]">72 km · 50m</span>
+                  <span className="text-brand-gold">72 km · 50m</span>
                 </div>
                 <div className="flex items-center justify-between text-stone-300">
                   <span className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#fab516]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-gold" />
                     <span>Bhanga Interchange</span>
                   </span>
-                  <span className="text-[#fab516]">30 km · 25m</span>
+                  <span className="text-brand-gold">30 km · 25m</span>
                 </div>
                 <div className="flex items-center justify-between text-stone-300">
                   <span className="flex items-center gap-2">
@@ -91,7 +91,7 @@ export default function LocationSection() {
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold tracking-wide text-white bg-[#0072bc] hover:bg-[#008be6] rounded shadow-md shadow-[#0072bc]/25 border border-[#38bdf8]/30 transition-all duration-200"
               >
                 <span>Open Google Navigation</span>
-                <span className="text-[#fab516]">↗</span>
+                <span className="text-brand-gold">↗</span>
               </a>
               {/* <a
                 href="tel:+8801929918408"
@@ -110,7 +110,7 @@ export default function LocationSection() {
                 <div className="flex items-center gap-2 text-xs font-mono text-stone-300">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="font-semibold text-white">Interactive Map:</span>
-                  <span className="text-stone-400 truncate">KM 103, Dhaka-Khulna Highway</span>
+                  <span className="text-stone-400 truncate"> Dhaka-Khulna Highway,Kashiani</span>
                 </div>
 
                 {/* View Switcher Tabs */}
@@ -119,7 +119,7 @@ export default function LocationSection() {
                     type="button"
                     onClick={() => setActiveTab("map")}
                     className={`px-3 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${activeTab === "map"
-                      ? "bg-[#0072bc] text-white shadow-xs"
+                      ? "bg-brand-blue text-white shadow-xs"
                       : "text-stone-400 hover:text-white"
                       }`}
                   >
@@ -129,7 +129,7 @@ export default function LocationSection() {
                     type="button"
                     onClick={() => setActiveTab("corridor")}
                     className={`px-3 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${activeTab === "corridor"
-                      ? "bg-[#0072bc] text-white shadow-xs"
+                      ? "bg-brand-blue text-white shadow-xs"
                       : "text-stone-400 hover:text-white"
                       }`}
                   >
@@ -140,7 +140,7 @@ export default function LocationSection() {
 
               {/* View 1: Interactive Google Map Embed */}
               {activeTab === "map" && (
-                <div className="relative w-full h-[400px] sm:h-[480px] bg-stone-900">
+                <div className="relative w-full h-100 sm:h-120 bg-stone-900">
                   <iframe
                     src="https://maps.google.com/maps?q=23.260465,89.765979&hl=en&z=14&output=embed"
                     width="100%"
@@ -156,9 +156,9 @@ export default function LocationSection() {
                   {/* Glassmorphism Destination Card Overlay */}
                   <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-xs p-3.5 sm:p-4 rounded-xl bg-[#090d16]/90 backdrop-blur-md border border-white/20 shadow-2xl pointer-events-auto">
                     <div className="flex items-center gap-1.5 mb-1.5">
-                      <span className="w-2 h-2 rounded-full bg-[#0072bc]" />
-                      <span className="w-2 h-2 rounded-full bg-[#fab516]" />
-                      <span className="w-2 h-2 rounded-full bg-[#c8102e]" />
+                      <span className="w-2 h-2 rounded-full bg-brand-blue" />
+                      <span className="w-2 h-2 rounded-full bg-brand-gold" />
+                      <span className="w-2 h-2 rounded-full bg-brand-red" />
                       <span className="text-[10px] font-mono tracking-wider text-stone-300 uppercase font-semibold pl-1">
                         KM 103 Complex
                       </span>
@@ -176,7 +176,7 @@ export default function LocationSection() {
                       className="inline-flex items-center justify-center gap-1.5 w-full py-1.5 px-3 rounded bg-[#0072bc] hover:bg-[#008be6] text-white text-xs font-medium transition-colors shadow-xs"
                     >
                       <span>Get Turn-by-Turn Directions</span>
-                      <span className="text-[#fab516]">↗</span>
+                      <span className="text-brand-gold">↗</span>
                     </a>
                   </div>
                 </div>

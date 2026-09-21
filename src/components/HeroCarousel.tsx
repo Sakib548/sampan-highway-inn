@@ -116,16 +116,14 @@ export default function HeroCarousel() {
         return (
           <div
             key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+              }`}
             aria-hidden={!isActive}
           >
             {/* Background Image with subtle Ken Burns effect */}
             <div
-              className={`relative w-full h-full transform transition-transform duration-7000 ease-out ${
-                isActive ? "scale-105" : "scale-100"
-              }`}
+              className={`relative w-full h-full transform transition-transform duration-7000 ease-out ${isActive ? "scale-105" : "scale-100"
+                }`}
             >
               <Image
                 src={slide.image}
@@ -142,7 +140,7 @@ export default function HeroCarousel() {
                 - Mid-layer vignette for image depth
                 - Dark bottom gradient for content readability
             */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/40 to-black/85" />
+            <div className="absolute inset-0 bg-linear-to-b from-black/75 via-black/40 to-black/85" />
             <div className="absolute inset-0 bg-radial-[circle_at_center,_transparent_0%,_rgba(0,0,0,0.4)_100%]" />
 
             {/* Slide Content */}
@@ -150,11 +148,10 @@ export default function HeroCarousel() {
               <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16">
                 {/* Badge */}
                 <div
-                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-xs font-medium mb-4 transform transition-all duration-700 delay-100 ${
-                    isActive
+                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-xs font-medium mb-4 transform transition-all duration-700 delay-100 ${isActive
                       ? "translate-y-0 opacity-100"
                       : "translate-y-4 opacity-0"
-                  }`}
+                    }`}
                 >
                   <span className="w-2 h-2 rounded-full bg-[#f59e0b] animate-pulse" />
                   {slide.badge}
@@ -162,11 +159,10 @@ export default function HeroCarousel() {
 
                 {/* Headline with 3-color brand accents (Blue, Gold, and Crimson Red on the last word) */}
                 <h1
-                  className={`text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4 transform transition-all duration-700 delay-200 ${
-                    isActive
+                  className={`text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4 transform transition-all duration-700 delay-200 ${isActive
                       ? "translate-y-0 opacity-100"
                       : "translate-y-6 opacity-0"
-                  }`}
+                    }`}
                 >
                   {slide.title}{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0072bc] via-[#38bdf8] to-[#f59e0b]">
@@ -179,22 +175,20 @@ export default function HeroCarousel() {
 
                 {/* Description */}
                 <p
-                  className={`max-w-xl mx-auto text-sm sm:text-base md:text-lg text-slate-200/90 leading-relaxed mb-6 transform transition-all duration-700 delay-300 font-normal ${
-                    isActive
+                  className={`max-w-xl mx-auto text-sm sm:text-base md:text-lg text-slate-200/90 leading-relaxed mb-6 transform transition-all duration-700 delay-300 font-normal ${isActive
                       ? "translate-y-0 opacity-100"
                       : "translate-y-6 opacity-0"
-                  }`}
+                    }`}
                 >
                   {slide.description}
                 </p>
 
                 {/* CTA Buttons */}
                 <div
-                  className={`flex flex-wrap items-center justify-center gap-3 transform transition-all duration-700 delay-400 ${
-                    isActive
+                  className={`flex flex-wrap items-center justify-center gap-3 transform transition-all duration-700 delay-400 ${isActive
                       ? "translate-y-0 opacity-100"
                       : "translate-y-6 opacity-0"
-                  }`}
+                    }`}
                 >
                   <Link
                     href={slide.primaryCtaLink}
@@ -267,11 +261,10 @@ export default function HeroCarousel() {
               aria-label={`Go to slide ${index + 1}`}
             >
               <div
-                className={`h-1.5 rounded-full transition-all duration-500 ${
-                  index === current
+                className={`h-1.5 rounded-full transition-all duration-500 ${index === current
                     ? "w-8 sm:w-12 bg-gradient-to-r from-[#0284c7] to-[#f59e0b]"
                     : "w-2 sm:w-3 bg-white/30 group-hover:bg-white/60"
-                }`}
+                  }`}
               />
             </button>
           ))}

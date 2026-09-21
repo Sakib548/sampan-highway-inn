@@ -45,10 +45,10 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Brand Logo & KM 103 tag with logo colors */}
+          {/* Brand Logo & Name */}
           <Link
             href="/"
-            className="flex items-center gap-3 group transition-opacity hover:opacity-90"
+            className="flex items-center gap-3.5 group transition-opacity hover:opacity-90"
             aria-label="Sampan Highway Inn Home"
           >
             <div className="relative flex items-center">
@@ -58,16 +58,18 @@ export default function Navbar() {
                 width={820}
                 height={561}
                 priority
-                className="h-9 sm:h-10 w-auto object-contain drop-shadow-sm"
+                className="h-12 sm:h-14 md:h-16 w-auto object-contain drop-shadow-md transition-transform group-hover:scale-102"
               />
             </div>
-            <div className="hidden sm:flex items-center gap-2 pl-3 border-l border-white/15 text-xs text-stone-300 font-mono tracking-wider">
+            <div className="hidden sm:flex items-center gap-2.5 pl-3.5 border-l border-white/20 text-xs text-stone-300 font-mono tracking-wider">
               <div className="flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0072bc]" title="Sampan Blue" />
                 <span className="w-1.5 h-1.5 rounded-full bg-[#fab516]" title="Sampan Gold" />
                 <span className="w-1.5 h-1.5 rounded-full bg-[#c8102e]" title="Sampan Red" />
               </div>
-              <span className="text-stone-300 font-medium">KM 103</span>
+              <span className="text-stone-100 font-serif text-sm md:text-base font-normal tracking-wide">
+                Sampan Highway Inn
+              </span>
             </div>
           </Link>
 

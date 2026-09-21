@@ -6,22 +6,22 @@ export default function Footer() {
   return (
     <footer className="relative pt-16 pb-12 bg-[#060910] text-stone-300 border-t border-white/10">
       {/* Brand Tri-color subtle top bar */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] brand-tricolor-gradient" />
+      <div className="absolute top-0 left-0 right-0 h-0.5 brand-tricolor-gradient" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-white/10">
           {/* Brand Info */}
           <div className="lg:col-span-4">
             <div className="flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 rounded-full bg-[#0072bc]" />
-              <span className="w-2 h-2 rounded-full bg-[#fab516]" />
-              <span className="w-2 h-2 rounded-full bg-[#c8102e]" />
+              <span className="w-2 h-2 rounded-full bg-brand-blue" />
+              <span className="w-2 h-2 rounded-full bg-brand-gold" />
+              <span className="w-2 h-2 rounded-full bg-brand-red" />
               <h3 className="font-serif text-lg text-stone-100 pl-1">
                 Sampan Highway Inn
               </h3>
             </div>
-            <p className="text-xs text-[#fab516] font-mono mb-3">
-              KM 103, Dhaka-Khulna Highway.
+            <p className="text-xs text-brand-gold font-mono mb-3">
+              Dhaka-Khulna Highway, Kashiani.
             </p>
             <p className="editorial-spacing text-xs text-stone-400 font-light max-w-sm">
               Restaurant, party centre, sweets, retail, fuel and rest — one stop, part of Sampan Group.
@@ -102,16 +102,6 @@ export default function Footer() {
               <li>
                 <a href="tel:+8801929918408" className="text-[#e59a24] hover:text-[#f5aa35] transition-colors">
                   +880 1929-918408
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/8801929918408"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-300 hover:text-white transition-colors"
-                >
-                  WhatsApp
                 </a>
               </li>
               <li>

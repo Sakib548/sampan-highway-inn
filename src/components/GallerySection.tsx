@@ -26,8 +26,26 @@ const photos: GalleryPhoto[] = [
     featured: true,
   },
   {
-    id: "royal-dining",
+    id: "frontview-day",
     number: "02",
+    title: "Daylight Complex Frontage & Paved Parking",
+    category: "architecture",
+    tag: "Complex Panorama",
+    image: "/images/gallery/frontview.jpg",
+    location: "Main Estate Entrance",
+  },
+  {
+    id: "building-night",
+    number: "03",
+    title: "Illuminated Restaurant & Party Centre Facade",
+    category: "architecture",
+    tag: "Night Architecture",
+    image: "/images/gallery/sampan-building-night.jpg",
+    location: "Main Building Forecourt",
+  },
+  {
+    id: "royal-dining",
+    number: "04",
     title: "Royal VIP Dining Lounge",
     category: "dining",
     tag: "Fine Dining",
@@ -35,27 +53,35 @@ const photos: GalleryPhoto[] = [
     location: "Main Dining Pavilion",
   },
   {
-    id: "vvip-suite",
-    number: "03",
-    title: "VVIP King Executive Suite",
-    category: "suites",
-    tag: "Accommodations",
-    image: "/images/gallery/WhatsApp Image 2025-06-25 at 6.12.08 PM (4).jpeg",
-    location: "Executive Rest Wing",
+    id: "dining-hall-interior",
+    number: "05",
+    title: "Executive Brick Dining Hall & Private Tables",
+    category: "dining",
+    tag: "Hall Interior",
+    image: "/images/gallery/dining-hall-interior.jpeg",
+    location: "Central Dining Hall",
   },
   {
-    id: "aerial-day",
-    number: "04",
-    title: "Expansive Highway Estate Panorama",
-    category: "architecture",
-    tag: "Day Drone Flight",
-    image: "/images/gallery/DJI_20251001114325_0185_D.jpg",
-    location: "Estate Grounds",
-    featured: true,
+    id: "dining-hall-wide",
+    number: "06",
+    title: "Spacious Dining Pavilion with Leather Seating",
+    category: "dining",
+    tag: "Dining Lounge",
+    image: "/images/gallery/IMG_20250916_070514.jpg",
+    location: "VIP Pavilion",
+  },
+  {
+    id: "banquet-cove",
+    number: "07",
+    title: "Cove-Lit Grand Banquet & Family Booths",
+    category: "dining",
+    tag: "Banquet Hall",
+    image: "/images/gallery/IMG_20250916_070840.jpg",
+    location: "Banquet Wing",
   },
   {
     id: "banquet-hall",
-    number: "05",
+    number: "08",
     title: "Executive Long Table Banquet Hall",
     category: "dining",
     tag: "Banquet & Events",
@@ -63,26 +89,63 @@ const photos: GalleryPhoto[] = [
     location: "Banquet Wing",
   },
   {
-    id: "modern-facade",
-    number: "06",
-    title: "Modern Brick & Structural Glazing Facade",
-    category: "architecture",
-    tag: "Architecture",
-    image: "/images/gallery/IMG_4234.JPG",
-    location: "Main Entrance Portico",
+    id: "vvip-suite",
+    number: "09",
+    title: "VVIP King Executive Suite",
+    category: "suites",
+    tag: "Accommodations",
+    image: "/images/gallery/suite-bedroom.jpeg",
+    location: "Executive Rest Wing",
   },
   {
-    id: "family-dining",
-    number: "07",
-    title: "Lakeside Family Dining Veranda",
-    category: "dining",
-    tag: "Family Veranda",
-    image: "/images/gallery/WhatsApp Image 2025-06-25 at 6.12.08 PM (8).jpeg",
-    location: "East Veranda",
+    id: "suite-window",
+    number: "10",
+    title: "Executive Suite Panoramic Window Lounge",
+    category: "suites",
+    tag: "Suite View",
+    image: "/images/gallery/suite-window-view.jpeg",
+    location: "Suite Private Room",
+  },
+  {
+    id: "aerial-day",
+    number: "11",
+    title: "Expansive Highway Estate Panorama",
+    category: "architecture",
+    tag: "Day Drone Flight",
+    image: "/images/gallery/DJI_20251001114325_0185_D.jpg",
+    location: "Estate Grounds",
+  },
+  {
+    id: "sweetbox-display",
+    number: "12",
+    title: "Traditional Sweet Box Display Counter",
+    category: "retail",
+    tag: "Sweet Box",
+    image: "/images/gallery/sweetbox-display-counter.jpeg",
+    location: "Sweet Box Counter",
+    featured: true,
+  },
+  {
+    id: "sweetbox-mart",
+    number: "13",
+    title: "Sweet Shop & Super Shop Aisles",
+    category: "retail",
+    tag: "Retail Hub",
+    image: "/images/gallery/sweetbox-mart-counter.jpeg",
+    location: "Sampan Mart Ground Floor",
+  },
+  {
+    id: "sampan-achar",
+    number: "14",
+    title: "Sampan Special Artisanal Pickles Counter",
+    category: "retail",
+    tag: "Artisanal Achar",
+    image: "/images/gallery/sampan-achar-counter.jpeg",
+    location: "Gourmet Pickle Station",
   },
   {
     id: "super-shop",
-    number: "08",
+    number: "15",
     title: "24/7 Super Shop & Belgian Waffle Bar",
     category: "retail",
     tag: "Retail & Cafe",
@@ -91,21 +154,40 @@ const photos: GalleryPhoto[] = [
   },
   {
     id: "bakery-counter",
-    number: "09",
+    number: "16",
     title: "Artisanal Bakery & Gourmet Confectionery",
     category: "retail",
     tag: "Gourmet Treats",
     image: "/images/gallery/IMG_20250916_065230.jpg",
     location: "Sweet & Pastry Gallery",
   },
+  {
+    id: "white-house-motel",
+    number: "17",
+    title: "Sampan White House Motel & Auto LPG Forecourt",
+    category: "suites",
+    tag: "Motel & Fuel",
+    image: "/images/gallery/white-house-motel.jpg",
+    location: "White House Complex",
+    featured: true,
+  },
+  {
+    id: "modern-facade",
+    number: "18",
+    title: "Modern Brick & Structural Glazing Facade",
+    category: "architecture",
+    tag: "Architecture",
+    image: "/images/gallery/IMG_4234.JPG",
+    location: "Main Entrance Portico",
+  },
 ];
 
 const categories = [
   { id: "all", label: "All Spaces", count: photos.length },
-  { id: "architecture", label: "Aerial & Architecture", count: 3 },
-  { id: "dining", label: "Dining & Banquets", count: 3 },
-  { id: "suites", label: "VVIP Rest Suites", count: 1 },
-  { id: "retail", label: "Super Shop & Cafe", count: 2 },
+  { id: "architecture", label: "Aerial & Architecture", count: photos.filter((p) => p.category === "architecture").length },
+  { id: "dining", label: "Dining & Banquets", count: photos.filter((p) => p.category === "dining").length },
+  { id: "suites", label: "VVIP Rest Suites", count: photos.filter((p) => p.category === "suites").length },
+  { id: "retail", label: "Super Shop & Treats", count: photos.filter((p) => p.category === "retail").length },
 ] as const;
 
 type CategoryId = (typeof categories)[number]["id"];
@@ -227,12 +309,13 @@ export default function GallerySection() {
 
         {/* Editorial Bento Masonry Grid */}
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 transition-all duration-1000 delay-150 ease-out ${
+          className={`grid grid-flow-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 transition-all duration-1000 delay-150 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
           {filteredPhotos.map((photo, index) => {
             const isFeatured = photo.featured && activeTab === "all";
+            const isDesktopOnlyFeatured = photo.id === "white-house-motel";
 
             return (
               <div
@@ -240,7 +323,9 @@ export default function GallerySection() {
                 onClick={() => setLightboxIndex(index)}
                 className={`group relative rounded-3xl overflow-hidden bg-slate-900 cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-700 ease-out transform hover:-translate-y-1 ring-1 ring-black/5 ${
                   isFeatured
-                    ? "md:col-span-2 lg:col-span-2 h-80 sm:h-96 md:h-[440px]"
+                    ? isDesktopOnlyFeatured
+                      ? "col-span-1 md:col-span-1 lg:col-span-2 h-72 sm:h-80 md:h-[440px]"
+                      : "col-span-1 md:col-span-2 lg:col-span-2 h-80 sm:h-96 md:h-[440px]"
                     : "col-span-1 h-72 sm:h-80 md:h-[440px]"
                 }`}
               >
@@ -251,7 +336,9 @@ export default function GallerySection() {
                   fill
                   sizes={
                     isFeatured
-                      ? "(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 66vw"
+                      ? isDesktopOnlyFeatured
+                        ? "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 66vw"
+                        : "(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 66vw"
                       : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   }
                   className="object-cover object-center transform duration-1000 ease-out group-hover:scale-108"

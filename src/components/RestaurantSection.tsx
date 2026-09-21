@@ -98,13 +98,24 @@ export default function RestaurantSection() {
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-103"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
+
+          {/* Top-Left: Flagship Brand Logo */}
+          {/* <div className="absolute top-4 left-4 sm:top-5 sm:left-5 z-10 w-28 sm:w-36 h-12 sm:h-14 bg-white/95 rounded-xl p-1.5 shadow-lg backdrop-blur-xs border border-white/60 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+            <Image
+              src="/logos/sampanhighwayinn.png"
+              alt="Sampan Highway Inn Flagship Logo"
+              width={120}
+              height={44}
+              className="object-contain"
+            />
+          </div> */}
 
           {/* Banner Tag & Caption */}
           <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-3 text-white">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-mono tracking-wide text-white mb-2 border border-white/20">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#0072bc]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
                 <span>Main Banquet Pavilion</span>
               </div>
               <h3 className="font-serif text-xl sm:text-2xl md:text-3xl font-normal text-white">
@@ -138,7 +149,7 @@ export default function RestaurantSection() {
         <div className="flex flex-wrap items-center gap-4 mb-16">
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center px-5 py-2.5 text-xs sm:text-sm font-semibold tracking-wide text-white bg-[#0072bc] hover:bg-[#008be6] rounded shadow-md shadow-[#0072bc]/20 transition-all duration-200"
+            className="inline-flex items-center justify-center px-5 py-2.5 text-xs sm:text-sm font-semibold tracking-wide text-white bg-brand-blue hover:bg-[#008be6] rounded shadow-md shadow-[#0072bc]/20 transition-all duration-200"
           >
             Enquire about a booking
           </Link>
@@ -180,7 +191,7 @@ export default function RestaurantSection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
                   {/* Top Tag Badge */}
                   <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-xs px-2.5 py-1 rounded text-[11px] font-mono text-white flex items-center gap-1.5 border border-white/15">
@@ -192,7 +203,7 @@ export default function RestaurantSection() {
                 {/* Content */}
                 <div className="p-5 flex flex-col flex-1 justify-between">
                   <div>
-                    <h4 className="font-serif text-base sm:text-lg font-medium text-stone-900 mb-2 group-hover:text-[#0072bc] transition-colors">
+                    <h4 className="font-serif text-base sm:text-lg font-medium text-stone-900 mb-2 group-hover:text-brand-blue transition-colors">
                       {card.title}
                     </h4>
                     <p className="editorial-spacing text-xs sm:text-[13px] text-stone-600 font-light leading-relaxed">

@@ -9,6 +9,7 @@ interface FuelStation {
   dotColor: string;
   hoverBorder: string;
   title: string;
+  logo: string;
   image: string;
   description: string;
   features: string[];
@@ -22,11 +23,12 @@ const fuelStations: FuelStation[] = [
     dotColor: "bg-[#c8102e]",
     hoverBorder: "hover:border-[#c8102e]/50",
     title: "Sampan Filling Station",
+    logo: "/logos/sampanfillingstation.png",
     image: "/images/nearby/filling-station.jpg",
     description:
       "A high-volume refuel stop right on the corridor, with Octane 95, diesel and Mobil lubricants on hand.",
     features: [
-      "Octane 95 & diesel",
+      "Octane,Petrol & diesel",
       "Mobil lubricants",
       "Dedicated heavy-vehicle bays",
     ],
@@ -38,6 +40,7 @@ const fuelStations: FuelStation[] = [
     dotColor: "bg-[#0072bc]",
     hoverBorder: "hover:border-[#0072bc]/50",
     title: "Sampan LPG Filling Station",
+    logo: "/logos/lpg.png",
     image: "/images/nearby/lpg.jpeg",
     description:
       "High-pressure auto LPG dispensing and cylinder refilling, for vehicles running on gas.",
@@ -86,9 +89,20 @@ export default function FuelSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
 
-                  {/* Top Tag Badge */}
-                  <div className="absolute top-4 left-4">
-                    <span className={`inline-block text-[11px] font-mono tracking-tag uppercase px-2.5 py-1 rounded backdrop-blur-md border ${station.tagColor} ${station.tagBorder}`}>
+                  {/* Top-Left: Brand Division Logo */}
+                  <div className="absolute top-4 left-4 z-10 w-12 h-12 sm:w-14 sm:h-14 bg-white/95 rounded-xl p-1 shadow-lg backdrop-blur-xs border border-white/60 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                    <Image
+                      src={station.logo}
+                      alt={`${station.title} Logo`}
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                    />
+                  </div>
+
+                  {/* Top-Right: Operational Tag Badge */}
+                  <div className="absolute top-4 right-4 z-10">
+                    <span className={`inline-block text-[11px] font-mono tracking-tag uppercase px-2.5 py-1 rounded-full backdrop-blur-md border ${station.tagColor} ${station.tagBorder}`}>
                       {station.tag}
                     </span>
                   </div>

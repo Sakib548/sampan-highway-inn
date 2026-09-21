@@ -91,7 +91,7 @@ export default function StaySection() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
 
                   {/* Top Tag Badge */}
                   <div className="absolute top-4 left-4">
