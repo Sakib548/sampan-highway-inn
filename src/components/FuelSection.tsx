@@ -26,7 +26,7 @@ const fuelStations: FuelStation[] = [
     logo: "/logos/sampanfillingstation.png",
     image: "/images/nearby/filling-station.jpg",
     description:
-      "A high-volume refuel stop right on the corridor, with Octane 95, diesel and Mobil lubricants on hand.",
+      "A high volume refuel stop right on the corridor, with Octane 95, diesel and Mobil lubricants on hand.",
     features: [
       "Octane,Petrol & diesel",
       "Mobil lubricants",
@@ -43,11 +43,11 @@ const fuelStations: FuelStation[] = [
     logo: "/logos/lpg.png",
     image: "/images/nearby/lpg.jpeg",
     description:
-      "High-pressure auto LPG dispensing and cylinder refilling, for vehicles running on gas.",
+      "High pressure auto LPG dispensing and cylinder refilling, for vehicles running on gas.",
     features: [
       "Auto LPG dispensing",
       "Cylinder refilling",
-      "Rapid-service bays",
+      "Rapid service bays",
     ],
   },
 ];
