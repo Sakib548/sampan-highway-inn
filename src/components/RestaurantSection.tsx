@@ -83,7 +83,7 @@ export default function RestaurantSection() {
           </div>
           <div className="lg:col-span-6">
             <p className="editorial-spacing text-sm sm:text-base text-stone-600 font-light">
-              A  banquet hall built for weddings, receptions, and corporate galas, seating 500+ guests under one roof with multi-cuisine buffets running alongside Shahi Kacchi, Polao, and roast, cooked through the day and night.
+              A  banquet hall built for weddings, receptions, and corporate galas, seating 500+ guests under one roof with multi cuisine buffets running alongside Shahi Kacchi, Polao, and roast, cooked through the day and night.
             </p>
           </div>
         </div>

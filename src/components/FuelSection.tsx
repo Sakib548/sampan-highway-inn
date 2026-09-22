@@ -17,7 +17,7 @@ interface FuelStation {
 
 const fuelStations: FuelStation[] = [
   {
-    tag: "70m walk · Open 24/7",
+    tag: "30s walk · Open 24/7",
     tagColor: "text-rose-400 bg-[#c8102e]/15",
     tagBorder: "border-[#c8102e]/40",
     dotColor: "bg-[#c8102e]",
@@ -34,7 +34,7 @@ const fuelStations: FuelStation[] = [
     ],
   },
   {
-    tag: "70m walk · Auto LPG",
+    tag: "30s walk · Auto LPG",
     tagColor: "text-[#38bdf8] bg-[#0072bc]/15",
     tagBorder: "border-[#0072bc]/40",
     dotColor: "bg-[#0072bc]",

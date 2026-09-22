@@ -10,6 +10,7 @@ interface RetailStop {
   hoverBorder: string;
   title: string;
   image: string;
+  logo: string;
   description: string;
   features: string[];
 }
@@ -23,6 +24,7 @@ const retailStops: RetailStop[] = [
     hoverBorder: "hover:border-[#0072bc]/50",
     title: "Sampan Mart",
     image: "/images/nearby/sampan-Mart.jpg",
+    logo: "/images/brands/sampanmart.png",
     description:
       "The flagship super shop for the highway with groceries, travel essentials and fresh snacks, stocked around the clock.",
     features: ["Groceries & daily essentials", "Travel essentials", "Fresh snacks"],
@@ -35,6 +37,7 @@ const retailStops: RetailStop[] = [
     hoverBorder: "hover:border-[#fab516]/50",
     title: "Mini Sampan Super Shop",
     image: "/images/nearby/mini-sampan.jpg",
+    logo: "/images/brands/minisampan.png",
     description:
       "A neighbourhood style kiosk built for the quick stop: in and out with what you need before you're back on the highway.",
     features: ["Instant refreshments", "Travel accessories", "Express checkout"],
@@ -81,8 +84,8 @@ export default function RetailSection() {
                   {/* Top-Left: Brand Division Logo */}
                   <div className="absolute top-4 left-4 z-10 w-12 h-12 sm:w-14 sm:h-14 bg-white/95 rounded-xl p-1 shadow-lg backdrop-blur-xs border border-white/60 flex items-center justify-center transition-transform duration-300 hover:scale-105">
                     <Image
-                      src="/logos/sampanmart.png"
-                      alt="Mini Sampan / Happy Shopping Logo"
+                      src={stop.logo}
+                      alt={stop.title}
                       width={48}
                       height={48}
                       className="object-contain"
