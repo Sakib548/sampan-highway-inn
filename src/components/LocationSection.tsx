@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function LocationSection() {
   const [copied, setCopied] = useState(false);
@@ -40,9 +41,9 @@ export default function LocationSection() {
 
               {/* Coordinates Badge with brand color & copy button */}
               <div className="flex items-center gap-3 mb-6">
-                <span className="font-mono text-sm sm:text-base font-semibold text-[#fab516] tracking-wide">
+                {/* <span className="font-mono text-sm sm:text-base font-semibold text-[#fab516] tracking-wide">
                   23.260465° N, 89.765979° E
-                </span>
+                </span> */}
                 <button
                   type="button"
                   onClick={handleCopyCoords}
@@ -88,10 +89,10 @@ export default function LocationSection() {
                 href={googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold tracking-wide text-white bg-[#0072bc] hover:bg-[#008be6] rounded shadow-md shadow-[#0072bc]/25 border border-[#38bdf8]/30 transition-all duration-200"
-              >
+                className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 text-xs sm:text-sm font-semibold tracking-wide text-white bg-brand-blue hover:bg-[#008be6] rounded shadow-md shadow-brand-blue/25 border border-[#38bdf8]/30 transition-all duration-200"              >
                 <span>Open Google Navigation</span>
-                <span className="text-brand-gold">↗</span>
+                <ArrowUpRight className="w-4 h-4 text-brand-gold shrink-0" />
+                {/* <span className="text-brand-gold">↗</span> */}
               </a>
               {/* <a
                 href="tel:+8801929918408"
@@ -173,10 +174,10 @@ export default function LocationSection() {
                       href={googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-1.5 w-full py-1.5 px-3 rounded bg-[#0072bc] hover:bg-[#008be6] text-white text-xs font-medium transition-colors shadow-xs"
-                    >
+                      className="inline-flex items-center justify-center gap-1.5 w-full py-1.5 px-3 rounded bg-brand-blue hover:bg-[#008be6] text-white text-xs font-medium transition-colors shadow-xs"                    >
                       <span>Get Turn-by-Turn Directions</span>
-                      <span className="text-brand-gold">↗</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-brand-gold shrink-0" />
+                      {/* <span className="text-brand-gold">↗</span> */}
                     </a>
                   </div>
                 </div>
