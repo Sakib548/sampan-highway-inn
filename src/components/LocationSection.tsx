@@ -44,13 +44,13 @@ export default function LocationSection() {
                 {/* <span className="font-mono text-sm sm:text-base font-semibold text-[#fab516] tracking-wide">
                   23.260465° N, 89.765979° E
                 </span> */}
-                <button
+                {/* <button
                   type="button"
                   onClick={handleCopyCoords}
                   className="text-[11px] font-mono text-stone-300 hover:text-white border border-white/20 hover:border-[#0072bc] bg-white/5 px-2.5 py-0.5 rounded transition-colors cursor-pointer"
                 >
                   {copied ? "Copied!" : "Copy"}
-                </button>
+                </button> */}
               </div>
 
               <p className="editorial-spacing text-sm sm:text-base text-stone-300 font-light mb-8">
