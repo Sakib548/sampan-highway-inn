@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body
         suppressHydrationWarning
-        className="min-h-screen flex flex-col bg-[#0c0f17] text-slate-100 selection:bg-[#0072bc]/30 selection:text-white"
+        className="min-h-screen flex flex-col bg-[#0c0f17] text-slate-100 selection:bg-brand-blue/30 selection:text-white"
       >
         <SmoothScroll>
           <Navbar />
