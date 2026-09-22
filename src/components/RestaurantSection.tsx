@@ -57,7 +57,7 @@ const subFacilities: FacilityCard[] = [
   {
     title: "Conference Hub",
     description: "HD projection and fibre internet for meetings, debriefs and offsite retreats.",
-    image: "/images/gallery/IMG_20250916_070313.jpg",
+    image: "/images/facilities/dining.jpg",
     tag: "Meetings & Debriefs",
     dotColor: "bg-[#0072bc]",
   },

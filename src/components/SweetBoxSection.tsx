@@ -123,7 +123,7 @@ export default function SweetBoxSection() {
                   alt={item.title}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-106"
+                  className="object-cover object-bottom transition-transform duration-500 ease-out group-hover:scale-106"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
                 <span className="absolute bottom-2.5 left-3 text-[10px] font-mono tracking-tag uppercase text-white/95 bg-black/50 backdrop-blur-xs px-2 py-0.5 rounded">
