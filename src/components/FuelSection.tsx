@@ -24,7 +24,7 @@ const fuelStations: FuelStation[] = [
     hoverBorder: "hover:border-[#c8102e]/50",
     title: "Sampan Filling Station",
     logo: "/logos/sampanfillingstation.png",
-    image: "/images/nearby/filling-station.jpg",
+    image: "/images/nearby/sampan-filling.jpg",
     description:
       "A high volume refuel stop right on the corridor, with Octane 95, diesel and Mobil lubricants on hand.",
     features: [
