@@ -19,7 +19,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Sampan Highway Inn",
   description:
-    "Sampan Highway Inn offers premier highway hospitality: dining hall, party centre, VVIP rest suites, traditional sweet box, super shop, and 24/7 fuel & LPG at KM 103.",
+    "Experience comfort and convenience on every journey, in one place: 24/7 Restaurant & Party Center, Fuel & LPG Filling Station, Hotel & Motel, Sweet & Super Shop.",
   icons: {
     icon: [
       { url: "/logos/sampanhighwayinn.png" },
