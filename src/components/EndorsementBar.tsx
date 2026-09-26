@@ -40,7 +40,7 @@ export default function EndorsementBar() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full bg-[#f8f9fb] py-24 md:py-32 border-t border-b border-stone-200 overflow-hidden text-stone-900"
+      className="relative w-full bg-[#f8f9fb] pt-16 pb-24 md:pt-20 md:pb-32 border-t border-stone-200/80 border-b border-stone-200 overflow-hidden text-stone-900"
     >
       {/* Brand Tri-Color Ambient Lighting (Gentle Blue & Gold Tints) */}
       <div className="pointer-events-none absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-150 h-75 bg-[#0072bc]/5 blur-[150px] rounded-full" />
